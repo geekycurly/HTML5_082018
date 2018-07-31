@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>About</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="My HTML5 course tutorial walkthrough">
+        <Meta name="keywords" content="HTML5, CSS, Javascript">
+        <Meta name="author" content="Paul">
+        <Meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <link rel="icon" href="./images/html5.png" type="image/png" sizes="16x16">
+        
+        <!--Links to external css styles to be included for this website-->
+        <link rel="stylesheet" = href="./css/main.css" type="text/css">
+        <link rel="stylesheet" = href="./css/test.css" type="text/css">
+        <!--Using css file from remote server. 
+            CDN: Content Delivery Network (need to pay). Every region has it's own CDN. Cache for static information. Speeds up!-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="./images/comworks.png" alt="ComWorks Pte Ltd">
+            </figure>
+        </header>
+
+        <!-- Applying CSS by Class [use .], by id [use #]
+        id is useful for control by Javascript though Javascript can also control by class
+        -->
+
+        <div id="menubar" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="about.html">About</a>
+
+            <div id="searchbar" class="search-container">
+                <form action="#action">
+                    <!--the # in #action means the input is going nowhere-->
+                    
+                    <button type="submit">
+                        <i class="fas fa-search fa-2x"></i>
+                        <!-- fa-1x means 1x the size-->
+                    </button>
+                    <input type="text" placeholder="Search..." name="Search">
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="bottomrow">
+                <div class="bottomcolumn">
+                    <a href="https://www.instagram.com">
+                        <i id="ig" class="fab fa-instagram fa-2x"></i>
+                    </a>                        
+                    <a href="https://www.facebook.com">
+                        <i id="fb" class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="https://www.google.com">
+                        <i id="gl" class="fab fa-google fa-2x"></i>
+                    </a>
+                    <a href="https://www.snapchat.com">
+                        <i id="sc" class="fab fa-snapchat fa-2x"></i>
+                    </a>            
+        
+                </div>
+            </div>
+            <small>&copy; Copyrights 2018. ComWorks Pte. Ltd.</small>>
+        </footer>
+
+    </body>
+</html>
