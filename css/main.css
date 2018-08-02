@@ -1,196 +1,206 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
+div {
+  background-color: yellow;
+}
+*/
+
 .topnav {
-  background-color:black;
-  overflow: hidden;  
+  background-color: #333333;
+  overflow: hidden;
 }
 
 .topnav a {
-    float: left;
-    color: rgb(255, 255, 255);
-    /* 3 ways of defining color value*/
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: #dddddd;
-    color: blue;
+  background-color: #dddddd;
+  color: blue;
 }
 
 .topnav a.active {
-    background-color: rgb(71,22,247);
-    color: white;
+  background-color: rgb(71, 22, 247);
+  color: white;
 }
 
 .topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border: 0px;
-    font-size: 17px;
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: 0px;
+  font-size: 17px;
 }
 
 .topnav .search-container {
-    float: right;
+  float: right;
 }
 
 .topnav .search-container button {
-    float: right;
-    margin-left: 0px;
-    margin-right: 16px;
-    margin-top: 10px;
-    cursor: pointer;
+  float: right;
+  margin-left: 0px;
+  margin-right: 16px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 .topnav .search-container button:hover {
-    background: #cccccc;
+  background: #cccccc;
 }
 
-/*Media Query to check screen resolution    */
-
 @media screen and (max-width: 600px) {
-    .topnav .search-container {
-        float: none;
-    }
+  .topnav .search-container {
+      float: none;
+  }
 
-    .topnav a, .topnav input[type=text], .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    font-weight: bold;
-    background-color: red;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
-
-.bottomrow {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-
-.bottomcolumn {
-    text-align: center;
-    padding: 10px;
-}
-
-.row {
-    background-color: yellow;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-    float: left;
-    background-color: cyan;
-}
-
-.left {
-    width: 15%;
-    text-align: center;
-}
-
-.right {
-    width: 75%;
-    margin: 0px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-}
-
-.lastdiv {
-    margin-bottom: 150px;
-}
-
-#sc, #ig {
-    margin-right: 10px;
-    color:gold;
-}
-
-#gl {
-    margin-right: 10px;
-    color: goldenrod;
-}
-
-#fb {
-    margin-right: 10px;
-    color: darkblue;
+  position: fixed;
+  bottom: 0;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: red;
+  text-align: center;
+  color: white;
+  width: 100%;
 }
 
 .footer a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+/*
+.bottomrow {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+*/
+
+.bottomrow {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bottomcolumn {
+  text-align: center;
+  padding: 10px;
+}
+
+.row {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  background-color: cyan;
+}
+
+.left {
+  width: 15%;
+  text-align: center;
+}
+
+.right {
+  width: 75%;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  /*margin: 0px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;*/
+}
+
+.lastdiv {
+  margin-bottom: 120px;
+}
+
+#fb, #gl, #sc, #ig {
+  margin-right: 10px;
+  color: aqua;
 }
 
 .roworigin {
-    background:yellow;
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    display: flex;  /*originally intended to use block but didn't work  */
-    clear: both;
+  background-color: yellow;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  clear: both;
 }
 
 .twocolumn {
-    float: left;
-    width: 45%;
-    padding: 10px 10px 20px 10px;
+  float: left;
+  width: 45%;
+  padding: 10px 10px 20px 10px;
 }
 
 table {
-    width: 100%;
-    height: 100%;
-    border: 1px solid grey;
-    border-spacing: 3px;
-    border-collapse: collapse;
-}
-
-th {
-    background-color: purple;
+  width: 100%;
+  border: 1px solid #561cc4;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 th, td {
-    text-align: center;
-    padding: 16px;
+  text-align: center;
+  padding: 16px;
 }
 
 tr:nth-child(even) {
-    background-color: orange;
+  background-color: #f2f2f2;
 }
 
 a:link {
-    color: lightgreen;
-    text-decoration: none;
-    background-color: transparent;
+  color: lightgreen;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 a:hover {
-    color: orange;
-    background: royalblue;
+  color: red;
+  background-color: aquamarine;
+  text-decoration: underline;
 }
 
 a:visited {
-    color: red;
-    background-color: transparent;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }

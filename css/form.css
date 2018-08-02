@@ -1,43 +1,43 @@
-/* used by contact.html */
+/*
+CSS to be used by contact.html
+*/
 
 .column1 {
-    background-color: lightblue;
-    float: left;
-    padding: 10px;
-    height: 200px;
-    margin: 5px;
+  background-color: lightblue;
+  float: left;
+  padding: 10px;
+  /*height: auto;*/
+  margin: 5px;
 }
 
 .containerleft, .containerright {
-    width: 11%;
+  width: 10%;
 }
 
 .containermiddle {
-    width: 70%;
-    background-color: lightblue;
+  width: 70%;
 }
 
 .formlabel {
-    display: block;
-    width: 120px;
+  display: block;
+  width: 100px;
 }
 
 .formcss {
-    width: 80%;
-    padding: 12px;
-    border: 1px dotted rgb(243, 140, 140);
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+  width: 70%;
+  padding: 12px;
+  border: 1px dotted green;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .formbutton {
-    float: right;
-    background-color: blue;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
 }

@@ -14,7 +14,6 @@
         <!--Links to external css styles to be included for this website-->
         <link rel="stylesheet" = href="./css/main.css" type="text/css">
         <link rel="stylesheet" = href="./css/form.css" type="text/css">
-        <link rel="stylesheet" = href="./css/contact.css" type="text/css">
         <!--Using css file from remote server. 
             CDN: Content Delivery Network (need to pay). Every region has it's own CDN. Cache for static information. Speeds up!-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -57,24 +56,24 @@
                 
             </div>
             <div class="column1 containermiddle">
-                <form class="contact_form" action="#" method="POST">
+                <form action="#" method="POST">
                     <div>
                         <label class="formlabel" for="fname">First Name:</label>
-                        <input type="text" id="fname" class="formcss" name="firstname" 
-                        placeholder="Your First Name..." required>
-                        <span class="form_hint">First Name is required</span>
+                        <input type="text" id="fname" class="formcss" 
+                        name="firstname" 
+                        placeholder="Your First Name...">
                      </div>
                      <div>
                         <label class="formlabel" for="lname">Last Name:</label>
-                        <input type="text" id="lname" class="formcss" name="lastname" 
-                        placeholder="Your Last Name..." required>
-                        <span class="form_hint">Last Name is required</span>
+                        <input type="text" id="lname" class="formcss" 
+                        name="lastname" 
+                        placeholder="Your Last Name...">
                     </div>
                     <div>
                         <label class="formlabel" for="email">Email <i class="far fa-envelope"></i> :</label>
-                        <input type="email" id="email" class="formcss" name="email" 
-                        placeholder="Your Email Address..." required>
-                        <span class="form_hint">Enter valid email format</span>
+                        <input type="email" id="email" class="formcss" 
+                        name="email" 
+                        placeholder="Your Email Address...">
                     </div>
                     <div>
                         <label class="formlabel" for="country">Country <i class="fas fa-globe-americas"></i> :</label>
@@ -90,7 +89,7 @@
                     </div>
                     
                     <div class="lastdiv">
-                            <button type="submit" class="formbutton">Submit</button>
+                            <input type="submit" value="Submit" class="formbutton">
                     </div>
                     
                     
